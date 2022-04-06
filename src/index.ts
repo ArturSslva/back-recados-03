@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 app.use(cors());
 
-app.get('/errands', (request: Request, response: Response) => {
+app.get('/', (request: Request, response: Response) => {
     return response.send('API UP');
 });
 
