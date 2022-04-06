@@ -67,5 +67,6 @@ app.put('/errands/:id', midVerifyId, midVerifyFields, (request: Request, respons
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    response.send('API RODANDO');
+    console.log('RODOU');
+    
 });
