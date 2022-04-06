@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express, { Request, response, Response } from 'express';
 import cors from 'cors';
 import { errands } from './data/data';
 import { getRandomInt } from './helpers/generateId';
@@ -63,5 +63,5 @@ app.put('/errands/:id', midVerifyId, midVerifyFields, (request: Request, respons
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log('API RODANDO');
+    response.send('API RODANDO');
 });
