@@ -17,6 +17,9 @@
   }, "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "build": "tsc",
-    "start": "node"
+    "start": "node /dist"
+  },
+  "engines" : { 
+    "node" : "16.13.1"
   }
 }
