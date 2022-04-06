@@ -11,6 +11,10 @@ app.use(express.urlencoded({ extended: false}));
 app.use(cors());
 
 app.get('/errands', (request: Request, response: Response) => {
+    return response.send('API UP');
+});
+
+app.get('/errands', (request: Request, response: Response) => {
     return response.status(200).json({
         msg: 'All errands',
         errands
